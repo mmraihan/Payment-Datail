@@ -1,1 +1,10 @@
-<p>payment-detail-form works!</p>
+<form>
+    <input type="hidden" name="paymentDetailId"
+    [value]="service.formData.paymentDetailId"/>
+
+    <div class="form-group">
+        <label>Card Owner Name</label>
+        <input class="form-control form-control-lg" placeholder="Full Name" name="cardOwnerName"
+        #cardOwnerName="ngModel" [(ngModel)]="service.formData.cardOwnerName">
+    </div>
+</form>
