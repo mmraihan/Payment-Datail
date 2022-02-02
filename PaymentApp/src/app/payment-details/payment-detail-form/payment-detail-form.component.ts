@@ -17,8 +17,7 @@ export class PaymentDetailFormComponent implements OnInit {
   onSubmit(form: NgForm){
     this.service.postPaymentDetail().subscribe(
         res=>{},
-        err=>{
-          console.log(err);
-        });
+        err=>{ console.log(err);}
+        );       
   }
 }

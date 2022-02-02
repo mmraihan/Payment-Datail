@@ -12,10 +12,11 @@ export class PaymentDetailService {
   constructor(private http: HttpClient) { }
 
   formData : PaymentDetail =new PaymentDetail();
-  readonly baseUrl ='https://localhost:44332/api/PaymentDetail';
+  readonly baseUrl ="https://localhost:44332/api/PaymentDetails";
 
   postPaymentDetail(){
     return this.http.post(this.baseUrl, this.formData)
+   
   }
 
 }
