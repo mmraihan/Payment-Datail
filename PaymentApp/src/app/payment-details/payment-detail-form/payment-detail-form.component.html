@@ -7,4 +7,22 @@
         <input class="form-control form-control-lg" placeholder="Full Name" name="cardOwnerName"
         #cardOwnerName="ngModel" [(ngModel)]="service.formData.cardOwnerName">
     </div>
+
+    <div class="form-group">
+        <label>Card Number</label>
+        <input class="form-control form-control-lg" placeholder="16 Digit Card Number" name="cardNumber"
+        #cardNumber="ngModel" [(ngModel)]="service.formData.cardNumber">
+    </div>
+    <div class="form-group">
+        <label>Security Code</label>
+        <input type="password" class="form-control form-control-lg" placeholder="Security Code" name="securityCode"
+        #securityCode="ngModel" [(ngModel)]="service.formData.securityCode">
+    </div>
+
+    <div class="form-group">
+        <label>Valid Through</label>
+        <input  class="form-control form-control-lg" placeholder="Expiration Date" name="expirationDate"
+        #expirationDate="ngModel" [(ngModel)]="service.formData.expirationDate">
+    </div>
+    
 </form>
